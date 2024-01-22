@@ -1,0 +1,140 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: #080808;
+  color: #fff;
+}
+
+.container{
+  padding: 10px 10%;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+nav h1{
+  font-size: 3rem;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+/* Search Bar */
+.search-bar{
+  width: 50%;
+  background: transparent;
+  margin: 100px auto 0;
+}
+.row{
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.row input{
+  border: 0;
+  outline: 0; 
+  background: #ebfffc;;
+  color: #555;;
+  padding: 10px 25px;
+  height: 60px;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 18px;
+}
+
+/* searchresults */
+
+#superhero-list{
+  display: flex;
+  margin: 30px auto;
+  width: 90%;
+  height: auto;
+  background-color: #080808;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.hero{
+  display: flex;
+  width: 350px;
+  height: 200px;
+  margin-bottom: 50px;
+  flex-direction: column;
+  border: 2px solid #ebfffc;
+  background-color: rgb(131, 123, 123);
+  /* background-image: linear-gradient(red,yellow); */
+}
+#info{
+  background-color: rgb(187, 185, 185);
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+}
+#info #name{
+  color: #72171f
+}
+#info #my-img{
+  width: 100px;
+  height: 100px;
+}
+#buttons{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  background-color: rgb(131, 123, 123);
+  /* background: transparent; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#buttons button{
+  height: 30px;
+}
+#buttons #fav{
+  font-size: 21px;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-weight: 500;
+}
+#buttons #about{
+  font-size: 21px;
+  background: transparent;
+  color: #fff;
+  font-weight: 500;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/fav.css" />
+  </head>
+  <body>
+    <section class="fav-section">
+      <div id="title">
+        <h1>My Favourite Heroes!</h1>
+      </div>
+      <!-- This button will redirect to home page -->
+      <div id="button">
+       <h2><a href="./index.html">Back</a></h2> 
+      </div>
+    </section>
+
+    <div id="list">
+      <template id="fav-hero">
+        <!-- Basic Information of Superheros -->
+        <div class="hero">
+          <div id="info">
+            <img id="my-img" src="" />
+            <h2 id="name"></h2>
+          </div>
+          <div id="buttons">
+            <!-- Add to Favourite button -->
+            <button id="fav">Remove</button>
+            <!-- button to display more information of superhero-->
+            <button id="about">About</button>
+          </div>
+        </div>
+      </template>
+    </div>
+
+    <!-- script for favourite js -->
+    <script src="./js/fav.js"></script>
+  </body>
+</html>

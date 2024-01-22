@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Hero Hunter</title>
+    <link rel="stylesheet" href="./css/index.css" />  
+  </head>
+  <body>
+   
+
+  <!-- Navigation Bar -->
+  <div class="container">
+    <div class="nav-bar">
+      <nav>
+        <h1>Super Hero Hunter</h1>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="favourites.html">Favourites</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Search Bar -->
+
+  <div class="search-bar">
+    <div class="row">
+      <input
+        type="text"
+        id="search-string"
+        placeholder="Enter a super hero name"
+        autocomplete="off"
+      />
+      
+    </div>
+    </div>
+    
+    <!-- Searched Result Section -->
+    
+     
+      
+        <div id="superhero-list">
+          <template id="search-results">
+              <!-- Basic Information of Superheros -->
+              <div class="hero">
+                <div id="info">
+                  <img id="my-img" src="">
+                  <h2 id="name"></h2>
+                </div>
+                <div id="buttons">
+                  <!-- Add to Favourite button -->
+                  <button id="fav">Add to Favourite</button>
+                  <!-- button to display more information of superhero-->
+                  <button  id="about">About</button>
+                </div>
+              </div>            
+          </template>
+        </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
